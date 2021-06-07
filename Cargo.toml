@@ -1,0 +1,15 @@
+[package]
+name = "reckless-ci"
+version = "0.1.0"
+authors = ["JTAG <hesamgholami@yahoo.com>"]
+edition = "2018"
+license-file = "LICENSE"
+description = "The Reckless CI"
+homepage = "https://github.com/J-TAG/reckless-ci"
+documentation = "https://github.com/J-TAG/reckless-ci"
+repository = "https://github.com/J-TAG/reckless-ci"
+readme = "README.adoc"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
