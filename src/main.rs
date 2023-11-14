@@ -13,7 +13,13 @@ fn handle_client(mut stream: UnixStream) -> std::io::Result<()> {
 }
 
 fn main() -> std::io::Result<()> {
-    let listener = UnixListener::bind("mysocket.sock")?;
+    let socket_path = "/tmp/reckless.sock";
+
+    if std::fs::metadata(socket_path).is_ok() {
+        std::fs::remove_file(socket_path)?;
+    }
+
+    let listener = UnixListener::bind(socket_path)?;
 
     // accept connections and process them, spawning a new thread for each one
     for stream in listener.incoming() {
