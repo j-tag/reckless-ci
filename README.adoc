@@ -1,1 +1,3 @@
- 
+# Reckless CI
+
+This project is under devlopment and is not ready yet. Please do not use it for now. 
